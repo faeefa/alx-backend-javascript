@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
-""" Takes float, returns func that multiplies """
-
+"""
+Complex types - functions
+"""
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """ Returns multiplier func """
-    return (lambda x: multiplier*x)
+    """
+    return a function that multiplies a float
+    """
+    def multiplies(n: float):
+        """
+        multiply two number
+        """
+        return n * multiplier
+    return multiplies
